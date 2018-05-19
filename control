@@ -1,0 +1,9 @@
+Package: com.artikus.playcli
+Name: playcli
+Depends: mobilesubstrate
+Version: 1.0.0
+Architecture: iphoneos-arm
+Description: A command-line tool to play audio files (requires MobileSubstrate for communication with audio playback via SpringBoard though).
+Maintainer: ArtikusHG
+Author: ArtikusHG
+Section: System
