@@ -1,14 +1,19 @@
-ARCHS = armv7 armv7s arm64
+DEBUG = 0
+FINALPACKAGE = 1
+
+ARCHS = armv7 arm64 arm64e
+
+INSTALL_TARGET_PROCESSES = SpringBoard
+
 include $(THEOS)/makefiles/common.mk
 
 TWEAK_NAME = Play
-Play_FILES = Tweak.xm
+Play_FILES = Tweak.x
 Play_FRAMEWORKS = AVFoundation
 Play_PRIVATE_FRAMEWORKS = AppSupport
+Play_CFLAGS = -fobjc-arc
 
 include $(THEOS_MAKE_PATH)/tweak.mk
 
-after-install::
-	install.exec "killall -9 SpringBoard"
 SUBPROJECTS += playcli
 include $(THEOS_MAKE_PATH)/aggregate.mk

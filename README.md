@@ -1,2 +1,1 @@
-# playcli
-A small tool to play audio files on jailbroken iOS devices using the command line.
+old crap i wrote when i was 12/13/14 (yes i really don't remember) & i'm lazy to update it properly so take this spaghetti code to play mp3 from command line lmao
